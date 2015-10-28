@@ -27,10 +27,15 @@
 	// Dispose of any resources that can be recreated.
 }
 
--(IBAction)recordAndPlay:(id)sender {
+-(IBAction)recordWithImagePicker:(id)sender {
 	NSLog(@"Button Pressed");
 	self.imagePickerMgr = [[ImagePickerManager alloc] init];
 	[self presentViewController:[_imagePickerMgr cameraViewController] animated:YES completion:nil];
+}
+
+-(IBAction)recordWithAVFoundation:(id)sender {
+	NSLog(@"Button Start recording with AVFoundation Pressed");
+	
 }
 
 @end

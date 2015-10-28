@@ -17,12 +17,22 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xqg-5n-KVW">
-                                <rect key="frame" x="106" y="226" width="108" height="30"/>
-                                <state key="normal" title="Start Recording">
+                                <rect key="frame" x="10" y="174" width="300" height="30"/>
+                                <state key="normal" title="Start Recording (UIImagePickerController)">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="recordAndPlay:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="8n3-5p-mQh"/>
+                                    <action selector="recordWitImagePicker:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="QL1-t7-VBG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LLw-fe-dFP">
+                                <rect key="frame" x="52" y="243" width="216" height="30"/>
+                                <state key="normal" title="Start Recording (AVFoundation)">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="recorWithAVFoundation:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Nbe-xB-qt0"/>
                                 </connections>
                             </button>
                         </subviews>
