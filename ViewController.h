@@ -10,6 +10,8 @@
 
 @interface ViewController : UIViewController
 
+-(IBAction)recordAndPlay:(id)sender;
+-(void)video:(NSString *)videoPath didFinishSavingWithError:(NSError *)error contextInfo:(void*)contextInfo;
 
 @end
 
